@@ -84,6 +84,13 @@ b = [3,1,4]
 result = [[x, y] for x in a for y in b if x != y]
 print(result)
 ```
+Code explanation:
+* Since each item of the list has to be a list of two values, they're described as [x, y]
+* There are two for clauses due to the list being created from two sources
+  * x comes from a
+  * y comes from b
+* There is a condition for out item --> x != y
+  * As long as the above condition is true, items described as [x, y] will be added to the resulting list
 ------
 **List Comprehension Example 3**
 ------
@@ -92,6 +99,12 @@ Turning a 2D array called "vec" into a single list
 vec = [[1,2,3], [4,5,6], [7,8,9]]
 result = [value for row in vec for value in row]
 print('Vec as a single list of values: %s' % result)
-# Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# Output: 'Vec as a single list of values: [1, 2, 3, 4, 5, 6, 7, 8, 9]'
 ```
+Code explanation:
+* Vec is a matrix example as it uses a list of lists
+* In order to grab each value one at a time from the rows, each of the following must be done:
+  1. An explanation of what each item in the list comprehension will be(in this case, "value")
+  2. Where the items come from must be defined to access them(in this case, "row"; "for row in vec")
+  3. A final clause that denotes that "value" comes from "row" must be created
 ------
