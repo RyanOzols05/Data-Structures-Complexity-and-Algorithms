@@ -70,7 +70,7 @@ del sammy
 print('Deleting sammy, should create an error when referenced again', sammy) # Causes a NameError
 ```
 *Membership*
-The 'in' and 'not in' operators can be used to check if a key is existant inside a dictionary
+* The 'in' and 'not in' operators can be used to check if a key is existant inside a dictionary
 ```python
 # Membership Example
 sammy = {
