@@ -35,42 +35,42 @@
 **Powering Up Sets: Set Operators**
 ------
 
-**
+*Union*
 * 
 ```python
 
 ```
-**
+*Intersection*
 * 
 ```python
 
 ```
-**
+*Difference*
 * 
 ```python
 
 ```
-**
+*Symmetric Difference*
 * 
 ```python
 
 ```
-**
+*Proper Subset*
 * 
 ```python
 
 ```
-**
+*Subset*
 * 
 ```python
 
 ```
-**
+*Proper Superset*
 * 
 ```python
 
 ```
-**
+*Superset*
 * 
 ```python
 
@@ -88,8 +88,8 @@
 ```python
 
 ```
-**
-* 
+*Assignment Operation and Updating Methods*
+* This is a way to affect an original set with another set while applying the result back to the original set
 ```python
 
 ```
