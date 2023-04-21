@@ -8,7 +8,7 @@
 ------
 **Mathematical Matrix Diagram**
 ------
-! [alt text](https://mrparkonline.github.io/figures/matrix_fig01.png "Mathematical Matrix Diagram"
+![alt text](https://mrparkonline.github.io/figures/matrix_fig01.png "Mathematical Matrix Diagram")
 * Above is a mathematical notation that provides a visual representation of a matrix
 * The explanation for the matrix is as follows:
   * Let A represent the matrix
