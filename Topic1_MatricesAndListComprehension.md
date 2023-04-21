@@ -41,21 +41,57 @@ print('Value at Row 2 Column 2: %s' % matrix_A[1][1])
 ------
 **What is List Comprehension?**
 ------
-
+* List Comprehension is a concise list creating method, commonly used when:
+ * The list is a result of operations to all items within the list
+ * It's made from another sequence or other iterable data
+ * It's a member of another list, sequence, or iterable data that satisfies a certain condition
 ------
 **List Comprehension Example 1**
 ------
-
+```python
+# Old method
+squares = []
+for i in range(10):
+ squares.append(i ** 2)
+print('Our result: %s' % squares)
+# Result: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
+```python
+# List Comprehension
+squares = [i**2 for i in range(10)]
+print('Our new result: %s' % squares)
+# Result: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+```
 ------
 **How Does List Comprehension Work?**
 ------
-
+* List Comprehension consists of the following:
+ * A **Square Bracket** that contains an expression describing the list
+ * One or more **For Clauses** that provide explanations of the members
+ * Zero or more **if clauses** depending on how complex the list is
+* Example: [i**2 for i in range(10)]
+ * i**2 for i in range(10) --> describes the list
+ * i**2 --> describes each item in the list
+ * i --> taken from the for clause
+ * for i in range(10) --> describes where i comes from
 ------
 **List Comprehension Example 2**
 ------
-
+Creating the list [[1, 3], [1, 4], [2, 3], [2, 1], [2, 4], [3, 1], [3, 4]] from A = [1, 2, 3] and B = [3, 1, 4]
+```python
+a = [1,2,3]
+b = [3,1,4]
+result = [[x, y] for x in a for y in b if x != y]
+print(result)
+```
 ------
 **List Comprehension Example 3**
 ------
-
+Turning a 2D array called "vec" into a single list
+```python
+vec = [[1,2,3], [4,5,6], [7,8,9]]
+result = [value for row in vec for value in row]
+print('Vec as a single list of values: %s' % result)
+# Output: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
 ------
