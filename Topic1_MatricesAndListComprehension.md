@@ -66,14 +66,14 @@ print('Our new result: %s' % squares)
 **How Does List Comprehension Work?**
 ------
 * List Comprehension consists of the following:
- * A **Square Bracket** that contains an expression describing the list
- * One or more **For Clauses** that provide explanations of the members
- * Zero or more **if clauses** depending on how complex the list is
+  * A **Square Bracket** that contains an expression describing the list
+  * One or more **For Clauses** that provide explanations of the members
+  * Zero or more **if clauses** depending on how complex the list is
 * Example: [i**2 for i in range(10)]
- * i**2 for i in range(10) --> describes the list
- * i**2 --> describes each item in the list
- * i --> taken from the for clause
- * for i in range(10) --> describes where i comes from
+  * i**2 for i in range(10) --> describes the list
+  * i**2 --> describes each item in the list
+  * i --> taken from the for clause
+  * for i in range(10) --> describes where i comes from
 ------
 **List Comprehension Example 2**
 ------
